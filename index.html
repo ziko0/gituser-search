@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github user Search</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+
+        <div class="container">
+            <!-- header with logo and theme switcher -->
+            <div class="header d-flex">
+                <h1 class="logo title">devfinder</h1>
+                <div class="d-flex switcher-div"><span>dark</span><button class="switch"><img src="./assets/images/icon-moon.svg" alt=""></button></div>
+            </div>
+            <!-- search input -->
+            <div class="search-div d-flex">
+                <img src="./assets/images/icon-search.svg" alt="search icon" class="search-icon">
+                <input type="text" placeholder="Search GitHub username…" id="search-input">
+                <button id="search" class="search-btn">Search</button>
+            </div>
+            <!-- result div with all information about user -->
+            <div class="result d-flex">
+                <!-- user avatar  -->
+                <div class="avatar">
+                    <img src="" alt="">
+                </div>
+                <!-- user personal information -->
+                <div class="info">
+                    <!-- personal info -->
+                    <div class="personal-info d-flex">
+                        <div>
+                            <h1 class="title">ziko0</h1>
+                            <a href="#" class="user-link">@ziko0</a>
+                        </div>
+                        <p class="joined">Joined 25 Jan 2011</p>
+                    </div>
+                    <!-- user bio -->
+                    <div class="bio">
+                        <p class="bio-par">This profile has no bio</p>
+                    </div>
+                    <!-- user repos followers and following's -->
+                    <div class="user-activity d-flex">
+                        <label for="repository">
+                            <span class="activity-name">Repos</span>
+                            <span>8</span>
+                        </label>
+                        <label for="followers">
+                            <span class="activity-name">Followers</span>
+                            <span>3938</span>
+                        </label>
+                        <label for="repository">
+                            <span class="activity-name">Following</span>
+                            <span>9</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>    
+</body>
+</html>
